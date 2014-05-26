@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div id="miContadorEstatico"></div>
+    <div id="miContadorLento"></div>
+    <div id="miContadorRapido"></div>
+
+    <script src="dist/contador.min.js"></script>
+    <script>
+
+    crearContador(2020, 1, 1, 0, 0, -4).en('#miContadorEstatico').unaVez();
+    crearContador(2020, 1, 1, 0, 0, -4).en('#miContadorLento').yActualizarCada(60).segundos();
+    crearContador(2020, 1, 1, 0, 0, -4).en('#miContadorRapido').yActualizarCada(100).milisegundos();
+
+    </script>
+</body>
+</html>
