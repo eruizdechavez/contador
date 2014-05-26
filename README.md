@@ -1,7 +1,7 @@
 contador
 ========
 
-Funcion para generar contadores a determinada fecha con soporte de zonas horarias, sencillo de usar y en español.
+Función para generar contadores a determinada fecha con soporte de zonas horarias, sencillo de usar y en español.
 
 Ejemplo
 ---
@@ -28,7 +28,7 @@ crearContador(2020, 1, 1, 0, 0, -4).en('#miContadorRapido').yActualizarCada(100)
 </script>
 ```
 
-Dando como resultado algo que se vera asi:
+Dando como resultado algo que se vera así:
 
 ```
 5 años, 7 meses, 5 días, 8 horas, 34 minutos
@@ -39,7 +39,7 @@ Dando como resultado algo que se vera asi:
 Uso
 ---
 
-Al importar este archivo estaran disponibles dos funciones: `crearContador` y `countdown`. `countdown` es la libreria en la que esta utileria esta basada.
+Al importar este archivo estarán disponibles dos funciones: `crearContador` y `countdown`. `countdown` es la libreria en la que esta utileria esta basada.
 
 ### crearContador
 
@@ -58,23 +58,23 @@ Crea una instancia nueva de un objeto `Contador`. Todos los parametros son reque
 
 #### `Contador.prototype.en(selector)`
 
-Establece el selector a ser usado por `document.querySelector`. Regresa la instancia del mismo objeto, por lo que se puede encadenar con los demas metodos.
+Establece el selector a ser usado por `document.querySelector`. Regresa la instancia del mismo objeto, por lo que se puede encadenar con los demás métodos.
 
 #### `Contador.prototype.unaVez`
 
-Genera el texto con el contador y lo usa como innerHTML del elemento que se especifico usando `.en`. Regresa la instancia del mismo objeto, por lo que se puede encadenar con los demas metodos.
+Genera el texto con el contador y lo usa como innerHTML del elemento que se especifico usando `.en`. Regresa la instancia del mismo objeto, por lo que se puede encadenar con los demás métodos.
 
 #### `Contador.prototype.yActualizarCada(tiempo)`
 
-Establece que el contador debera actualizarse automaticamente. Esta funcion no crea el texto automaticamente y se espera que despues de esta se mande llamar cualquiera de las unidades te tiempo disponibles (`.segundo`, `.segundos`, `.milisegundo`, `.milisegundos`). Regresa la instancia del mismo objeto, por lo que se puede encadenar con los demas metodos.
+Establece que el contador deberá actualizarse automáticamente. Esta función no crea el texto automáticamente y se espera que después de esta se mande llamar cualquiera de las unidades te tiempo disponibles (`.segundo`, `.segundos`, `.milisegundo`, `.milisegundos`). Regresa la instancia del mismo objeto, por lo que se puede encadenar con los demás métodos.
 
 #### `Contador.prototype.segundo`, `Contador.prototype.segundos`, `Contador.prototype.milisegundo`, `Contador.prototype.milisegundos`
 
-Establece la unidad de tiempo que se uso en `.yActualizarCada`, genera el texto inicial e inicia el contador. Regresa la instancia del mismo objeto, por lo que se puede encadenar con los demas metodos.
+Establece la unidad de tiempo que se uso en `.yActualizarCada`, genera el texto inicial e inicia el contador. Regresa la instancia del mismo objeto, por lo que se puede encadenar con los demás métodos.
 
 #### `Contador.prototype.mostrar`
 
-Usada de forma automatica por cualquiera de las unidades de tiempo. No se espera que se llame manualmente. Regresa la instancia del mismo objeto, por lo que se puede encadenar con los demas metodos.
+Usada de forma automática por cualquiera de las unidades de tiempo. No se espera que sea llamada manualmente. Regresa la instancia del mismo objeto, por lo que se puede encadenar con los demás métodos.
 
 
 Versiones
@@ -92,6 +92,4 @@ Gracias a [Stephen M. McKamey](http://stephen.mckamey.com/) por su libreria `cou
 
 Licencia
 --------
-
-Copyright (c) 2014 Erick Ruiz de Chavez
-Licencia MIT
+Este código se encuentra bajo una licencia MIT. Copyright (c) 2014 Erick Ruiz de Chavez.
